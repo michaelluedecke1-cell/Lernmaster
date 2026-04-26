@@ -1,6 +1,6 @@
 {
-  "name": "Englisch Vokabel Trainer",
-  "short_name": "VocabApp",
+  "name": "Lernmaster",
+  "short_name": "Master",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#121a21",
