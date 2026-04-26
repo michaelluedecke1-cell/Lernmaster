@@ -163,6 +163,16 @@
         function flipCard() { if (vocabulary.length > 0) document.getElementById('card').classList.toggle('is-flipped'); }
         function nextWord(e) { e.stopPropagation(); if (vocabulary.length === 0) return; currentIndex = (currentIndex + 1) % vocabulary.length; updateUI(); }
         function prevWord(e) { e.stopPropagation(); if (vocabulary.length === 0) return; currentIndex = (currentIndex - 1 + vocabulary.length) % vocabulary.length; updateUI(); }
+
+
+        // Registrierung des Service Workers
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+            .then(reg => console.log('Service Worker registriert!', reg))
+            .catch(err => console.log('Service Worker Fehler:', err));
+    });
+}
     </script>
 </body>
 </html>
