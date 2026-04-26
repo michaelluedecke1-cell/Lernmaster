@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lernmaster-v1';
+const CACHE_NAME = 'lern-master-v2';
 const ASSETS = [
   'index.html',
   'manifest.json'
